@@ -1,16 +1,9 @@
-'use strict';
+const numArray = [1, 2, 3, 5, 0, 6, 7, 0, 8, 9, 0];
 
-// מגישים:
-// ליאון מברין
-// יאיל סאלם
+let zeroCount = 0;
 
-let arr = [0, 5, 0, 2, 3, 0, 3, 11, 0];
-let count = 0;
+for (let i = 0; i < numArray.length; i++) {
+  numArray[i] === 0 ? zeroCount++ : (zeroCount += 0);
+}
 
-arr.forEach(element => {
-  element === 0 ? count++ : (count = count);
-});
-
-console.log(count);
-
-
+console.log(zeroCount);
