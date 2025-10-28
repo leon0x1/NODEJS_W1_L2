@@ -1,22 +1,15 @@
-'use strict';
+/*
+שמות מגישים: 
+יאיל סאלם
+ליאון מברין
+*/
+let isPrime = true;
 
-// מגישים:
-// ליאון מברין
-// יאיל סאלם
+for (let i = 2; i < 237; i++) {
+  // Checkng if there are any numbers (besides 1 and the value of i) that i can divide by
+  for (let j = 2; j < i; j++) if (i % j === 0) isPrime = false;
 
-let num = 237;
+  if (isPrime) console.log(i);
 
-//עובר על כל המספרים לפני 237
-// ובודק אם הם ראשוניים, אם כן- מדפיס אותם
-for (let i = 1; i < num; i++) {
-  let isPrime = true;
-
-  for (let j = 2; j <= Math.sqrt(i); j++) {
-    if (i % j === 0) {
-      isPrime = false;
-      break;
-    }
-  }
-  if (isPrime) console.log(i + ' ');
+  isPrime = true;
 }
-
