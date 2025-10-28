@@ -1,6 +1,8 @@
 'use strict';
 
-// מגיש: ליאון מברין
+// מגישים:
+// ליאון מברין
+// יאיל סאלם
 
 let num = 237;
 
@@ -17,3 +19,4 @@ for (let i = 1; i < num; i++) {
   }
   if (isPrime) console.log(i + ' ');
 }
+
